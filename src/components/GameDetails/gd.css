@@ -1,0 +1,49 @@
+.game-details {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 1px solid #eee;
+    top: 145px;
+}
+.game-details h4 {
+    margin: 10px auto;
+}
+.game-details .total {
+    background-color: #add8d8;
+    border-bottom: 1px solid #b0b1ae;
+    padding: 5px 0;
+    font-size: .9em;
+}
+.game-details .solved-container {
+    background-color: #d8f5b8;
+    font-size: .8em;
+}
+.solved-container .solved {
+    padding: 5px 0;
+    font-size: 1.3em;
+}
+.solved-container .easy {
+    padding: 5px 0;
+    background-color: #b3f56c;
+}
+.solved-container .medium {
+    padding: 5px 0;
+    background-color: #9ce251;
+}
+.solved-container .hard {
+    padding: 5px 0;
+    background-color: #6ead2a;
+    border-bottom: 1px solid #b0b1ae;
+}
+.game-details .lost {
+    padding: 5px 0;
+    background-color: #f34e0c;
+    border-bottom: 1px solid #b0b1ae;
+    font-size: .9em;
+}
+.game-details .skipped {
+    padding: 5px 0;
+    background-color: #74cffa;
+    border-bottom: 1px solid #b0b1ae;
+    font-size: .9em;
+}

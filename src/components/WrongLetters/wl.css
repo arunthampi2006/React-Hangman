@@ -1,0 +1,17 @@
+.wlBox {
+    width: 25px;
+    height: 22px;
+    padding: 5px;
+    display: inline-block;
+    margin: 0 1px;
+    text-transform: capitalize;
+}
+.wlBox.txt {
+    border: #e4e3e3 1px solid;
+    font-size: 1em;
+    font-weight: bold;
+    color: #f12a07;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: line-through;
+}

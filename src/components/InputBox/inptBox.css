@@ -1,0 +1,20 @@
+.inpt-box {
+    width: 130px;
+    border: #e0dddd 1px solid;
+    text-align: center;
+    font-size: 3.4em;
+    font-weight: bold;
+    line-height: 1.3em;
+    color: #0783e7;
+    padding-bottom: .16em;
+    text-transform: capitalize;
+    display: block;
+    margin: 0 auto;
+}
+.inpt-container {
+    margin: 20px auto
+}
+ button.validate {
+    border-radius: 70px;
+    background-color: #03A9F4;
+}

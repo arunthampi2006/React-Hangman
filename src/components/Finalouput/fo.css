@@ -1,0 +1,17 @@
+.foBox {
+    width: 25px;
+    height: 22px;
+    padding: 5px;
+    display: inline-block;
+    margin: 5px 1px;
+    text-transform: capitalize;
+    border: transparent 1px solid;
+    font-size: 1em;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+.foBox.txt {
+    border: #e4e3e3 1px solid;
+    color: #3f812b;
+}

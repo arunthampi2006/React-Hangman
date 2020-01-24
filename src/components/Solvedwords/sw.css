@@ -1,0 +1,16 @@
+.swrd {
+    width: auto;
+    height: 22px;
+    padding: 5px;
+    display: inline-block;
+    margin: 0 1px;
+    text-transform: uppercase;
+}
+.swrd.txt {
+    border: #e4e3e3 1px solid;
+    font-size: 1em;
+    font-weight: bold;
+    color: #17ad03;
+    vertical-align: middle;
+    text-align: center;
+}

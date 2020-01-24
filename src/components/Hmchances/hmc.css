@@ -1,0 +1,19 @@
+.container {
+    width: 175px;
+    height: 211px;
+    padding: 10px;
+    border: 1px solid #eee;
+    position: absolute;
+    top: 145px;
+    right: 14px;
+}
+.container svg{
+    position: absolute;
+}
+p.chances {
+    position: absolute;
+    bottom: -41px;
+}
+p.chances strong {
+    color: #c22205
+}
