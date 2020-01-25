@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {map, flatten, filter} from 'lodash'
+import {map, flatten, forEach} from 'lodash'
 import './inptBox.css'
 
 import {validateText} from '../../actions'
@@ -24,15 +24,16 @@ class InputBox extends Component {
         const {store} = this.props
         const {hmdata, status} = store.getState()
         const {editedWords, randomWord, generateWord, wrongLetters, solvedWords, hmChanceList, chances} = hmdata
-        let {letters, gameDetails} = hmdata
+        let {gameDetails} = hmdata
         let {isSolved, isSkipped} = status
         let {val} = this.state
+        val = val.toLocaleUpperCase()
         let ch = chances
         if (val !== '' && chances) {
             let wrngLtr = ''
             let pikLtr = ''
-            map(generateWord, (gnrW, i) => {
-                map(gnrW, (gw, g) => {
+            forEach(generateWord, (gnrW, i) => {
+                forEach(gnrW, (gw, g) => {
                     if(gw === val) {
                         let gi = i >= 1 ? g + 1 : g
                         editedWords[i][gi] = val
@@ -50,7 +51,7 @@ class InputBox extends Component {
                 wrngLtr = ''
                 pikLtr = ''
             }
-            letters = flatten(editedWords)
+            let letters = flatten(editedWords)
             let gdObj = {}
             let spltWords = randomWord.split(' ')
             let ltr = map(letters, lt => lt ? lt : ' ')

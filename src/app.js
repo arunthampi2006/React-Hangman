@@ -78,7 +78,7 @@ class APP extends Component {
         lvl !== 1 ? param.wordsPerString = lvl : param.maxLength = 8;
         let rndmWrds = randomWords(param)
         let rwRange = range(0, rndmWrds.length)
-        return rndmWrds[random(rwRange, lvl)]
+        return rndmWrds[random(rwRange, lvl)].toLocaleUpperCase()
     }
     handleClick() {
         let { hmSelected } = this.state
